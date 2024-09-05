@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="/css/main.min.css">
+    <title>Booking</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-light" style="background-color:rgb(222, 186, 140);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#intro">
+            <img src="/resources/logo.jpg" alt="logo" height="50" class="d-inline-block align-text-center">
+            HOMEST - Give your pet a vacation of their own with our attentive and loving care
+          </a>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: blanchedalmond;">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" target="_parent">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html" target="_blank">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing" target="_blank" tabindex="-1">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html" tabindex="-1">Log In/Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section id="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center align align-items-center bg-warmth">
+                <div class="col-md-9 text-center text-md-start">
+                    <h3>
+                        <div class="display-3 text-almond_contrast">Thank you for choosing us as your pet's home away from home!</div>
+                        <div class="display-6 text-almond_contrast">We're committed to providing exceptional care for your furry friend while you're away.</div>
+                    </h3>
+                    <p class="lead my-4 text-almond_contrast">We understand that your furry friend is a cherished member of your family, which is why we're dedicated to making their stay as comfortable and enjoyable as possible. Our team of pet-loving professionals is devoted to providing personalized attention and exceptional care to ensure that your pet receives the best possible experience.To complete your booking, simply provide us with your and your pet's details, and we'll take care of the rest! We can't wait to welcome your furry friend into our facility and provide them with the ultimate pampering experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing">
+      <div class="container-lg">
+        <div class="row justify-content-center align align-items-center bg-warmth">
+            <div class="col-md-9 text-center text-md-start">
+                <p class="lead my-4 text-almond_contrast justify-content-center">Tailor Your Pet's Care: Choose from Our Range of Services to Ensure a Happy and Healthy Furry Friend!</p>
+                <p class="lead my-2 text-almond_contrast">Please choose the service you would like to book for.</p>
+
+                
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg">
+      <div class="row justify-content-center align align-items-center bg-warmth">
+        <div class="col-md-9 text-center text-md-start">
+          <p class="lead my-2 text-almond_contrast">Please provide us with your and your pet's details</p>
+
+          <form method = "post" action = "booking">
+
+            <select class="form-select" name="service" aria-label="pet_services">
+              <option selected>Choose Service</option>
+              <option value="Boarding">Boarding </option>
+              <option value="Grooming">Grooming </option>
+              <option value="Daycare">Daycare</option>
+              <option value="Socializing">Socializing</option>
+              <option value="Furry_Festivities">Furry Festivities</option>
+              <option value="Vet_service">Healthy Pet Solutions: Vet Care and Expert Tips</option>
+            </select> 
+
+            
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="cust_name" name="name" placeholder="e.g. Jason Grace" required>
+            <label for="name">Your Name</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="tel" class="form-control" id="cust_contact" name="contact" placeholder="e.g. 6745857749" required>
+            <label for="contact">Contact Number</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="cust_email" name="email" placeholder="e.g. lily@example.com" required>
+            <label for="email">Email address</label>
+          </div>
+
+          <select class="form-select" name="breed" aria-label="animal_type">
+            <option selected>Breed</option>
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+            <option value="Others">Others</option>
+          </select><br>                 
+
+          <div class="form-floating">
+            <input type="text" class="form-control" id="pet_name" name="pet" placeholder="e.g. Mike" required>
+            <label for="pet_name">Pet's Name</label>
+          </div><br>
+
+          <div class="form-floating">
+            <input type="date" class="form-control" id="date1" name="start_date" placeholder="e.g. 24/05/2023" required>
+            <label for="pet_name">From</label>
+          </div><br>
+          
+          <div class="form-floating">
+            <input type="date" class="form-control" id="date2" name="end_date" placeholder="e.g. 25/05/2023" required>
+            <label for="pet_name">To</label>
+          </div><br>
+
+          <div class="form-floating">
+            <input type="text" class="form-control" id="date2" name="review" placeholder="Great place">
+            <label for="review">Add your review</label>
+          </div>
+
+          <div class="col-3">
+            <button type="submit">Submit</button>
+          </div>
+          
+        </form>
+
+        <form action="/fetchDetails" method="post">
+          <button>View Bookings</button>
+        </form>
+
+        <form action="/review" method="post">
+          <button>Add or view review</button>
+        </form>
+
+        </div>
+      </div>
+    </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
